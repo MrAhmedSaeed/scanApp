@@ -1,0 +1,2 @@
+export const SCAN_SUCCESS = 'SCAN_SUCCESS';
+export const SCAN_INPROGRESS = 'SCAN_INPROGRESS';
