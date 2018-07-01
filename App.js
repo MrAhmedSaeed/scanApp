@@ -5,7 +5,7 @@
  */
 
 import React, { Component } from 'react';
-import HomePage from './src/components/home';
+import HomePage from './src/components/homepage';
 
 export default class App extends Component {
   render() {
