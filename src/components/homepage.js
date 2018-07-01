@@ -2,15 +2,13 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { View, Text, Image, ActivityIndicator } from 'react-native';
 import { Button } from 'native-base';
-
 import { onScanSubmit } from '../actions/scanActions';
-
 
 const imagePath = require('../images/icon.jpg');
 
 class HomePage extends React.Component {
   
-  onScan = () => {
+  openScanner = () => {
     this.props.onScanSubmit();
   }
 
@@ -18,7 +16,7 @@ class HomePage extends React.Component {
     if (!this.props.loading) {
       return (
         <Button
-        onPress={this.onScan}
+        onPress={this.openScanner}
         style={styles.buttonStyle} 
         rounded 
         >

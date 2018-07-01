@@ -4,9 +4,6 @@ import { SCAN_INPROGRESS, SCAN_SUCCESS }
 from './actionTypes';
 import { ScanCard } from '../source/scaning'; 
 
-
-// import { callUserSignIn } from '../sources/index';
-
 const options = {
   quality: 1.0,
   storageOptions: {
@@ -40,7 +37,6 @@ export const onScanSubmit = () => (
       } else {
         //scaning
           ScanCard(response.path).then(res => {
-            console.log(res.result);
             dispatch(scanSuccess(res.result));
           });
         }
